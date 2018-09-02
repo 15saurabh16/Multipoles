@@ -29,9 +29,9 @@ def mkdirnotex(filename):
 
 
 if __name__ == '__main__':
-    AllSigma = [0.4,0.5,0.6]
-    AllDelta = [0.1,0.15,0.2]
-    AllMu = [-0.2,-0.1,0,0.1,0.2]
+    AllSigma = [0.6]
+    AllDelta = [0.1]
+    AllMu = [0.22,0.25]#[-0.2,-0.1,0,0.1,0.2]
    
     
     loaddir = os.getcwd()

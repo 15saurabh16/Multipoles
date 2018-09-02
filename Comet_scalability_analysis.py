@@ -29,9 +29,9 @@ def mkdirnotex(filename):
 
 if __name__ == '__main__':
     tau = 0.8
-    AllSigma = [0.4,0.5,0.6]
-    AllDelta = [0.2,0.15,0.1]
-    AllMu = [-0.15,-0.12,-0.09,-0.06]
+    AllSigma = [0.4]
+    AllDelta = [0.1]
+    AllMu = [-0.06]#[-0.09] #[-0.15,-0.12,-0.09,-0.06]
     for s in range(len(AllSigma)):
         sigma = AllSigma[s] # 0.5 0.4 0.6
         for d in range(len(AllDelta)):
@@ -43,7 +43,7 @@ if __name__ == '__main__':
                 edge_filt = AllMu[e]
                 
                 if (edge_filt== -0.06):
-                    max_seas = 6
+                    max_seas = 4
                 else:
                     max_seas = 10
 
@@ -64,7 +64,7 @@ if __name__ == '__main__':
                     CorrMat = np.nan_to_num(CorrMat)
                     num_ts = np.shape(CorrMat)[0]
                     
-                    group_sz = 10000
+                    group_sz = 1000
                     [FinalMPList,FinalLEVList,FinalLEVGList,FinalSzList] = COMETA.COMET_EXT(CorrMat,sigma,delta,edge_filt,group_sz,GraphStr)
                     print "Total number of multipoles found for mu = " + str(edge_filt) + " is : "+str(len(FinalMPList)) 
                     t2 = time.time()

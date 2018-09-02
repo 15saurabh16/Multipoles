@@ -201,10 +201,10 @@ if __name__ == '__main__':
     print "Total 4Poles: "+str(len(Brut4MPs))
     
 #    t1 = time.time()
-#    [Brut5MPs,Brut5LEVs,Brut5LEVGs] = brute_search_parallel2(CorrMat,5,sigma,delta)
-#    t2 = time.time()
-#    print "Time Elapsed for BruteSearch of size 5:"+str(t2-t1)+" seconds"
-#    print "Total 5Poles: "+str(len(Brut5MPs))
+    [Brut5MPs,Brut5LEVs,Brut5LEVGs] = brute_search_parallel2(CorrMat,5,sigma,delta)
+    t2 = time.time()
+    print "Time Elapsed for BruteSearch of size 5:"+str(t2-t1)+" seconds"
+    print "Total 5Poles: "+str(len(Brut5MPs))
     [Brut5MPs,Brut5LEVs,Brut5LEVGs] = [[],[],[]]
     
     

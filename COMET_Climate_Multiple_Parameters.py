@@ -29,9 +29,9 @@ def mkdirnotex(filename):
 
 
 if __name__ == '__main__':
-    AllSigma = [0.6,0.5]
-    AllDelta = [0.1,0.15]
-    AllMu = [0.05]#[-0.2,-0.1,0,0.01]
+    AllSigma = [0.6,]
+    AllDelta = [0.1]
+    AllMu = [0.02,0.03]#[-0.2,-0.1,0,0.01]
     tau = 0.8
     loaddir = os.getcwd()
     data = sio.loadmat(loaddir + '/psl_NCEP2_C12_1979_2014_73x144_0.8_50_'+str(tau)+'.mat')
