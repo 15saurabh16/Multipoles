@@ -1,7 +1,7 @@
 # Multipoles
 This repository contains the code that we used to find "multipoles", a new class of multivariate relationship patterns in time series data in datasets from climate and neuroscience domain. See [1] for further details. 
 
-<b>Instructions to run the code:<\b>
+<b>Instructions to run the code:</b>
 
 1) The code to obtain all the empirical observations discussed in section 4.1 of techincal report can be obtained using empirical_observations.py.
 
