@@ -14,7 +14,7 @@ This repository contains the code that we used to find "multipoles", a new class
 	edge_filt: same as parameter \mu of CoMEtExtended (see <a href = "https://www.researchgate.net/publication/323129038_Mining_Novel_Multivariate_Relationships_in_Time_Series_Data_Applications_to_Climate_and_Neuroscience"> technical report </a> for further details). Higher values of edge_filt will recover more multipoles but will increase computational time and vice-versa.<br>   
 	group_sz: This code runs in parallel on 20 processors. Each processor examines a group of candidates to find multipoles. group_sz is the desired size of a group. I set it to 10000 on my machine.<br>
   Graph_str(only in the version of COMET_ADVANCED.py): A filename to be given to the text files that store the correlation graphs that are used to find cliques.<br>  
-  In the output, four lists are obtained: i) List of all multipoles,<br> ii) List of their corresponding least eigenvalues (= 1 - linear dependence),<br> iii) List of corresponding linear gains, and<br> iv) LIst of their corresponding sizes.<br> 
+  In the output, four lists are obtained:<br> i) List of all multipoles,<br> ii) List of their corresponding least eigenvalues (= 1 - linear dependence),<br> iii) List of corresponding linear gains, and<br> iv) List of their corresponding sizes.<br> 
 
 4) Script COMET_fMRI.py was used to find all multipoles in fMRI data (using COMET.py) and also computes statistical significance of all the obtained multipoles.<br> 
 5) Script COMET_Climate.py was used to find all multipoles in SLP data (using COMET.py) and also computes statistical significance of all the obtained multipoles.<br>
