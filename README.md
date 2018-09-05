@@ -7,8 +7,8 @@ This repository contains the code that we used to find "multipoles", a new class
 
 
 2) Please keep all the codes and data files in the same directory.
-3) There are two implementations of COMET algorithm; COMET.py and COMET_ADVANCED.py. The two implementations mainly differ in the choice of algorithm used to solve the clique enumeration problem in one of the intermediate steps. Script COMET.py uses bronk_kerb.py, a python implementation of bronk kerbosch's algorithm (1973), whereas COMET_ADVANCED.py uses the C++ implementation (in quick-cliques folder) provided by authors (available at https://github.com/darrenstrash/quick-cliques).   contains the primary module COMET_EXT which can be called to find all multipoles in a given dataset. COMET_EXT takes five inputs:
-	CorrMat: Correlation matrix of the entire dataset
+3) There are two implementations of COMET algorithm; COMET.py and COMET_ADVANCED.py. The two implementations mainly differ in the choice of algorithm used to solve the clique enumeration problem in one of the intermediate steps. Script COMET.py uses bronk_kerb.py, a python implementation of bronk kerbosch's algorithm (1973), whereas COMET_ADVANCED.py uses the C++ implementation (in quick-cliques folder) provided by authors (available at https://github.com/darrenstrash/quick-cliques).   contains the primary module COMET_EXT which can be called to find all multipoles in a given dataset. COMET_EXT takes five inputs:<br>
+	CorrMat: Correlation matrix of the entire dataset <br>
 	sigma: minimum threshold on linear dependence of desired multipoles
 	delta: minimum threshold on linear gain of desired multipoles
 	edge_filt: same as parameter \mu of CoMEtExtended (see <a href = "https://www.researchgate.net/publication/323129038_Mining_Novel_Multivariate_Relationships_in_Time_Series_Data_Applications_to_Climate_and_Neuroscience"> technical report </a> for further details). Higher values of edge_filt will recover more multipoles but will increase computational time and vice-versa.   
