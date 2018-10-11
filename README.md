@@ -1,5 +1,5 @@
 # Multipoles
-This repository contains the code that we used to find "multipoles", a new class of multivariate relationship patterns in time series data in datasets from climate and neuroscience domain. See [1] for further details. 
+This repository contains the code that we used to find "multipoles", a new class of multivariate relationship patterns in time series data in datasets from climate and neuroscience domain. See [1],[2] for further details. 
 
 <b>Instructions to run the code:</b>
 
@@ -26,3 +26,4 @@ This repository contains the code that we used to find "multipoles", a new class
 
 # References: 
 [1] <a href = "https://www.researchgate.net/publication/323129038_Mining_Novel_Multivariate_Relationships_in_Time_Series_Data_Applications_to_Climate_and_Neuroscience"> Technical Report </a>
+[2] <a href = "https://arxiv.org/abs/1810.02950"> ArxiV version (latest) </a>
