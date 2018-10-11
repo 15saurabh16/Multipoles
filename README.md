@@ -25,5 +25,5 @@ This repository contains the code that we used to find "multipoles", a new class
 10) Script compare_with_brute_force.py can be used to compare the output of COMET_EXT with brute force.<br>
 
 # References: 
-[1] <a href = "https://www.researchgate.net/publication/323129038_Mining_Novel_Multivariate_Relationships_in_Time_Series_Data_Applications_to_Climate_and_Neuroscience"> Technical Report </a>
+[1] <a href = "https://www.researchgate.net/publication/323129038_Mining_Novel_Multivariate_Relationships_in_Time_Series_Data_Applications_to_Climate_and_Neuroscience"> Technical Report </a> <br>
 [2] <a href = "https://arxiv.org/abs/1810.02950"> ArxiV version (latest) </a>
