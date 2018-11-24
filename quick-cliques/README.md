@@ -61,7 +61,7 @@ Cliques can pe printed in two formats:
  - One clique per line, as space separated integers.
 
    This is activated by the `PRINT_CLIQUES_ONE_BY_ONE` define in `makefile`
- - The recursion tree format used by [Tomita et al. (2006)](http://dx.doi.org/10.1016/j.tcs.2006.06.015). That is:
+ - The recursion tree format used by [Tomita et al. (2006)](https://doi.org/10.1016/j.tcs.2006.06.015). That is:
    - Print a number when search evaluates a new vertex
    - Print a `c` when a new maximal clique is found
    - Print a `b` when search backtracks.
