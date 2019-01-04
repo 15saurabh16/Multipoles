@@ -44,14 +44,14 @@ using namespace std;
     </center>
     \endhtmlonly
 
-    See the algorithm's description in http://dx.doi.org/10.1007/978-3-642-17517-6_36
+    See the algorithm's description in https://doi.org/10.1007/978-3-642-17517-6_36
 
     This algorithm first orders the vertices in a degeneracy order (vertices
     are removed from the graph in order by degree in the remaining subgraph 
     and placed in this order in the ordering).
 
     We then recursively call a modified version of the algorithm of Tomita et
-    al. (2006) http://dx.doi.org/10.1016/j.tcs.2006.06.015, for each vertex
+    al. (2006) https://doi.org/10.1016/j.tcs.2006.06.015, for each vertex
     v in the ordering, where R = {v}, P = v's neighbors that are after v
     in the degneracy order, and X = v's neighbors that are before v 
     in the degeneracy order.

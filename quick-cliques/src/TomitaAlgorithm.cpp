@@ -49,7 +49,7 @@ using namespace std;
     \endhtmlonly
 
     See the algorithm's description in 
-    http://dx.doi.org/10.1016/j.tcs.2006.06.015  
+    https://doi.org/10.1016/j.tcs.2006.06.015  
 
     This is a recursive backtracking algorithm that maintains three 
     sets of vertices, R, a partial clique, P, the common neighbors

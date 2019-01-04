@@ -48,8 +48,8 @@ using namespace std;
     \endhtmlonly
 
     See the main algorithm's description in 
-    http://dx.doi.org/10.1016/j.tcs.2006.06.015, and a description of this
-    variant of the algorithm in http://dx.doi.org/10.1007/978-3-642-20662-7_31
+    https://doi.org/10.1016/j.tcs.2006.06.015, and a description of this
+    variant of the algorithm in https://doi.org/10.1007/978-3-642-20662-7_31
 
     This is a recursive backtracking algorithm that maintains three 
     sets of vertices, R, a partial clique, P, the common neighbors
