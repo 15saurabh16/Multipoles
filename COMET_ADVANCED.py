@@ -48,16 +48,16 @@ def cliq_brute_search(Cliq,CliqMat,cliq_sz,sigma,levgth):
         NewSet = CliqArr[np.ix_(subset)]        
         count = count+1
         NewCorrMat = CliqMat[np.ix_(subset,subset)]               
-        sz = len(NewSet)
-        W = np.abs(NewCorrMat) - np.eye(sz)           
-        mean_vec = np.divide(np.mean(W,axis=1)*sz,(sz-1)*1.0)
-        min_wt = np.min(mean_vec)
-        if min_wt>=levgth:
-            [lev,levg] = MISC.get_lev_and_levg(NewCorrMat)
-            if levg>=levgth and lev<=1-sigma:
-                AllMPs.append(NewSet.tolist())
-                AllLEVs.append(lev)
-                AllLEVGs.append(levg)
+#        sz = len(NewSet)
+#        W = np.abs(NewCorrMat) - np.eye(sz)           
+#        mean_vec = np.divide(np.mean(W,axis=1)*sz,(sz-1)*1.0)
+#        min_wt = np.min(mean_vec)
+#        if min_wt>=levgth:
+        [lev,levg] = MISC.get_lev_and_levg(NewCorrMat)
+        if levg>=levgth and lev<=1-sigma:
+            AllMPs.append(NewSet.tolist())
+            AllLEVs.append(lev)
+            AllLEVGs.append(levg)
  
     return [AllMPs,AllLEVs,AllLEVGs]
     
@@ -141,8 +141,9 @@ def remove_non_maximals(AllMPs,AllLEVs,AlllEVGs,CorrMat,sigma,delta):
         [CliqMPs,_,_,_] = extract_multipoles_from_cliq(ThisMP,ThisCM,sigma,delta)
         
         for cliq in CliqMPs:
-            cliq.sort()
-            IsIncluded[str(cliq)] = True
+            cliq2 = [int(cliq[i]) for i in range(len(cliq))]
+            cliq2.sort()
+            IsIncluded[str(cliq2)] = True
         
     return [FinalMPList,FinalLEVList,FinalLEVGList,FinalSzList]
     
