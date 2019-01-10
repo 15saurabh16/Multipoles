@@ -57,7 +57,7 @@ def filter_multipoles(AllGLMPs,AllGLLEVs,AllGLLEVGs,sigma,delta):
 if __name__ == '__main__':
     
     # Parameters
-    dataset = 'fMRI' #'SLP'
+    dataset = 'SLP' #'SLP'
     MaxSetSize = 11
     AllThresh = [0.01,0.1,0.2,0.5,1]
     AllGLMPs = []
@@ -68,7 +68,7 @@ if __name__ == '__main__':
 
     # Dataset download
     if dataset=='SLP':
-        AllAlpha = np.arange(0.1,1,0.1)
+        AllAlpha = np.arange(0.1,1,0.01)
         data = sio.loadmat(loaddir + '/psl_NCEP2_C12_1979_2014_73x144_0.8_50_0.8.mat')
         InputTs = data['FinalTsData']
         InputTs = statm.zscore(InputTs,axis=0)
