@@ -37,6 +37,19 @@ def make_sym_matrix(n,vals):
   return m
   
 
+def get_lev_minors(InpCM):
+    NumVars = InpCM.shape[0]
+    AllLEVMinors = np.zeros((NumVars,))
+    MemList = range(NumVars)
+    for i in MemList: 
+        SelMems = MemList[:]       
+        SelMems.pop(i)            
+        PMinor = InpCM[np.ix_(SelMems,SelMems)]
+        V,D = LA.eig(PMinor)
+        AllLEVMinors[i] = np.min(V)
+    return AllLEVMinors
+
+
 # Creates a directory path if it doesn't exist before
 def mkdirnotex(filename):
 	folder=os.path.dirname(filename)
