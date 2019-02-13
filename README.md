@@ -24,6 +24,13 @@ This repository contains the code that we used to find "multipoles", a new class
 9) Script BruteForce_Climate.py finds all multipoles in SLP data using a brute-force approach.<br> 
 10) Script compare_with_brute_force.py can be used to compare the output of COMET_EXT with brute force.<br>
 
+# Interpretation of Output Variables: 
+i) FinalLEVList: List of least eigenvalues of all multipoles. Thus, for each multipole,  it is also equal to 1 - \sigma. 
+ii) FinalLEVGList: List of linear gain of all multipoles. 
+iii) FinalMPList: List of all multipoles. Each entry in the list represents the indices of participating time series. For example, an entry [2,12,15] in the list represents a multipole formed by 2nd, 12th, and 15th time series in your data matrix. Please note that the indices are obtained according to python and thus numbered from zero instead of 1. Therefore, for the set of 40 time series, index will be numbered from 0 to 39. 
+iv) FinalSzList: List of sizes (number of time series) of all multipoles. 
+v) FinalTsData: Time Series Data Matrix. 
+
 # References: 
 [1] <a href = "https://www.researchgate.net/publication/323129038_Mining_Novel_Multivariate_Relationships_in_Time_Series_Data_Applications_to_Climate_and_Neuroscience"> Technical Report </a> <br>
 [2] <a href = "https://arxiv.org/abs/1810.02950"> ArxiV version (latest) </a>
