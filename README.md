@@ -33,5 +33,5 @@ v) FinalTsData: Time Series Data Matrix. <br>
 
 # References: 
 [1] <a href = "https://www.researchgate.net/publication/323129038_Mining_Novel_Multivariate_Relationships_in_Time_Series_Data_Applications_to_Climate_and_Neuroscience"> Technical Report </a> <br>
-[2] <a href = "https://arxiv.org/abs/1810.02950"> ArxiV version </a>
+[2] <a href = "https://arxiv.org/abs/1810.02950"> ArxiV version </a><br>
 [3]<a href = "https://ieeexplore.ieee.org/document/8693798"> IEEE TKDE 2019 Accepted version </a>
